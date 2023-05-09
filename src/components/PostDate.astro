@@ -10,12 +10,12 @@ const { post } = Astro.props
 ---
 
 <div class="post-date">
-  {post.Date ? getDateStr(post.Date) : ''}
+  {post.Date ? '投稿日 ' + getDateStr(post.Date) : ''}
 </div>
 
 <style>
   .post-date {
-    padding: 0 0 0.3rem;
+    padding: 0 0 0.1rem;
     font-size: 0.9rem;
   }
 </style>
