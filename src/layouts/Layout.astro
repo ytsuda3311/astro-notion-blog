@@ -170,6 +170,12 @@ const asidePaddingTop = '60px'
     margin: 0 auto;
     padding: 0 40px;
   }
+  @media (max-width: 640px) {
+    main .main-body {
+      display: block;
+      padding: 0 10px;
+    }
+  }
 
   aside {
     flex: 1;
@@ -184,7 +190,8 @@ const asidePaddingTop = '60px'
     aside {
       order: 2;
       width: 100%;
-      padding: 40px 20px 20px;
+      padding: 10px 20px 20px;
+      position: static;
     }
   }
 
@@ -218,7 +225,8 @@ const asidePaddingTop = '60px'
   }
   @media (max-width: 640px) {
     div.content {
-      padding: 0 18px;
+      padding: 18px 15px;
+      margin: 20px 0;
     }
   }
 
@@ -265,6 +273,12 @@ const asidePaddingTop = '60px'
     padding: 0.3rem 0 0.6rem;
     font-size: 0.95rem;
     color: #fbfaf5;
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    main header div.description {
+      font-size: 0.7rem;
+    }
   }
 
   main footer {
